@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp">
+    <EditText
+        android:id="@+id/fatherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Father's Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/fatherMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Father's Mobile No."
+        android:layout_below="@+id/fatherName"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/motherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mother's Name"
+        android:layout_below="@+id/fatherMobile"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/motherMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mother's Mobile No."
+        android:layout_below="@+id/motherName"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/motherMobile">
+    <Button
+        android:id="@+id/submitBtn"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motherMobile"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginHorizontal="10dp" />
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/submitBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

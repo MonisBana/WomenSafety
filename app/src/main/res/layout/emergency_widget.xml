@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <ImageButton
+        android:id="@+id/siren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/siren"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#00ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textColor="#fff"
+        android:layout_below="@+id/siren"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"/>
+</RelativeLayout>
